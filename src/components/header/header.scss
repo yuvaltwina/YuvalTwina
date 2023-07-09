@@ -1,0 +1,113 @@
+@import '../../utils/variabels.scss';
+
+.marker {
+  color: $secondery-color;
+}
+.header {
+  position: sticky;
+  inset: 0;
+  z-index: 1;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-inline: 1rem;
+  gap: 2rem;
+  width: clamp(18.8rem, 100%, 44rem);
+}
+.header-title {
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  color: $third-color;
+}
+.header-subtitle {
+  font-size: clamp(1.1rem, 4vw, 1.8rem);
+  color: $text-secondery;
+}
+
+//לגרום לכפתור להיות בלי לחכות שניות כשנקטן
+.header-button {
+  position: relative;
+  color: $primary-color;
+  font-size: clamp(20px, 4vw, 25px);
+  padding: 21px;
+  box-shadow: inset 0 0 0 0 $primary-color;
+  border: 1px solid $primary-color;
+  transition: 0.8s;
+  cursor: pointer;
+  &:hover {
+    // transform: skew(-20deg);
+    color: $secondery-color;
+    box-shadow: inset 400px 0 0 0 $primary-color;
+    border: 1px solid $secondery-color;
+    font-size: clamp(25px, 6vw, 30px);
+  }
+}
+.slide-in-button {
+  animation: slideIn 1.4s ease-in-out;
+}
+
+.header-icons-container {
+  display: flex;
+  gap: 2rem;
+}
+.header-icon {
+  font-size: clamp(3.1rem, 4vw, 3.3rem);
+  color: $third-color;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 0.6s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+.fade-in-letter {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in forwards;
+}
+.fade-in-subtitle {
+  opacity: 0;
+  animation: fade-in 1.8s ease-in forwards;
+}
+
+.slide-in-button {
+  animation: slideIn 1.4s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200%);
+    opacity: 0.2;
+  }
+  75% {
+    transform: translateX(-75%);
+    opacity: 0.3;
+  }
+  90% {
+    transform: translateX(75%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

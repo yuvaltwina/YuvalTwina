@@ -1,0 +1,144 @@
+@import '../../utils/variabels.scss';
+$padding-margin-top: 7rem;
+
+.knowledge {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: clamp(80rem, 100dvh, 200rem);
+  background-color: rgba($primary-color, 0.88);
+  background-image: url('../../src/utils/images/fluidBackground.avif');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.knowledge-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.knowledge-left-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 3rem;
+  padding-top: $padding-margin-top;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center; //האם להשאיר
+}
+
+.knowledge-card {
+  text-align: center;
+  width: clamp(10rem, 100%, 55rem);
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.knowledge-card-title {
+  font-size: clamp(33px, 6vw, 50px);
+  color: $third-color;
+}
+.knowledge-card-text {
+  font-size: clamp(20px, 3vw, 30px);
+  color: $text-secondery;
+}
+.knowledge-card-tech {
+  font-size: clamp(18px, 3vw, 26px);
+  color: $secondery-color;
+}
+.knowledge-right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: rgba($secondery-color, 0.85);
+}
+.knowledge-icons-container {
+  display: flex;
+  width: 100%;
+  width: clamp(20rem, 100%, 50rem);
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.knowledge-icon {
+  position: relative;
+  width: clamp(9.5rem, 30%, 14rem);
+  color: $primary-color;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  font-size: clamp(6rem, 7vw, 9.5rem);
+  &:hover {
+    border: 1px solid $primary-color;
+  }
+}
+.knowledge-icon-hover {
+  content: '';
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: clamp(1rem, 7vw, 1.6rem);
+  cursor: default;
+  &:hover {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 750px) {
+  .knowledge-title-start {
+    display: none;
+  }
+  .knowledge-content {
+    flex-direction: column;
+  }
+  .knowledge-right-side {
+    width: 100%;
+    height: 40%;
+  }
+  .knowledge-icon {
+    width: clamp(4.7rem, 15%, 7rem);
+    font-size: clamp(3rem, 10vw, 9rem);
+  }
+  .knowledge-icon-hover {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+  }
+  .knowledge-left-side {
+    width: 100%;
+    height: 60%;
+    justify-content: space-around;
+    padding: 0.8rem;
+    padding-inline: 1rem;
+    gap: 0.2rem;
+  }
+
+  .knowledge-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 7px;
+  }
+}
