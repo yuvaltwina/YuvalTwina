@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../../dist/css/header.css';
+import '../../../dist/css/main.css';
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
-import MotionImage from '../motionImage/MotionImage';
+import MotionImage from '../../components/motionImage/MotionImage';
 
 const HEADLINE_TEXT = 'Not Your Average1Software Engineer';
 
-function Header() {
+function Main() {
   const headlineLetters = HEADLINE_TEXT.split('').map((letter, index) => {
     const animationDelay = index * 0.05;
     if (letter === '1') {
@@ -57,4 +57,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Main;

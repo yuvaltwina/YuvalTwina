@@ -1,0 +1,107 @@
+@import '../../utils/variabels.scss';
+
+.about {
+  position: relative;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  background-color: $third-color;
+  padding-bottom: 12rem;
+  width: 100%;
+}
+.about-header {
+  background-color: $secondery-color;
+  text-align: center;
+  padding: 10rem 2rem 23rem 2rem;
+  width: 100%;
+  color: $third-color;
+  h1 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 1.125;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-weight: 600;
+    font-size: 1.23rem;
+    line-height: 1.5;
+  }
+}
+.about-cards-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -10rem;
+  margin-inline: 2rem;
+}
+
+.about-card {
+  background-color: $third-color;
+  color: $primary-color;
+  border: 1px solid rgba(183, 183, 183, 0.223);
+  box-shadow: 0 6px 6px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+  width: clamp(20rem, 26%, 50rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 3rem 1rem 5rem 1rem;
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $secondery-color;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  &:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+  }
+  &:nth-child(3) {
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+
+.about-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  font-size: 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: $special-color;
+}
+.about-card-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 1300px) {
+  .about-cards-container {
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 0;
+  }
+
+  .about-card {
+    width: 95%;
+    &:nth-child(2) {
+      order: -1;
+      border-radius: 10px 10px 0 0px;
+    }
+    &:nth-child(1) {
+      order: +1;
+      border-radius: 0 0 10px 10px;
+    }
+    &:nth-child(3) {
+      border-radius: 0;
+    }
+  }
+}

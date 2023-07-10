@@ -1,16 +1,18 @@
 import React from 'react';
 import '../dist/css/App.css';
-import Header from './components/header/Header';
+import Main from './pages/main/Main';
 import Navbar from './components/navbar/Navbar';
-import Knowledge from './components/knowledge/Knowledge';
-import Projects from './components/projects/Projects';
+import About from './pages/about/About';
+// import Knowledge from './components/knowledge/Knowledge';
+import Projects from './pages/projects/Projects';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
-      <Header />
-      <Knowledge />
+      <Main />
+      <About />
+      {/* <Knowledge /> */}
       <Projects />
     </div>
   );

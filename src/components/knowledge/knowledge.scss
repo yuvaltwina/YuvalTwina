@@ -2,16 +2,15 @@
 $padding-margin-top: 7rem;
 
 .knowledge {
-  overflow-x: hidden;
   position: relative;
   z-index: 10;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+  display: flex;
   text-align: center;
   width: 100%;
-  height: $section-height;
-  // padding: 5rem 0 0 0;
+  // max-height: 2rem !important; // padding: 5rem 0 0 0;
   background-color: rgba($primary-color, 0.88);
   background-image: url('../../src/utils/images/fluidBackground.avif');
   background-size: cover;

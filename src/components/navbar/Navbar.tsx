@@ -7,7 +7,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const firstSection = document.querySelector('.knowledge');
+      const firstSection = document.querySelector('.about');
       if (firstSection) {
         const { top } = firstSection.getBoundingClientRect();
         if (top >= 50 && navbarClass === 'navbar-scrolled') {
