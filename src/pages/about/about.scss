@@ -11,10 +11,18 @@
 }
 .about-header {
   background-color: $secondery-color;
-  text-align: center;
   padding: 10rem 2rem 23rem 2rem;
   width: 100%;
   color: $third-color;
+}
+.about-header-text {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 82%;
   h1 {
     font-weight: 600;
     font-size: 2.3rem;
@@ -84,6 +92,9 @@
   gap: 0.5rem;
 }
 @media screen and (max-width: 1300px) {
+  .about-header-text {
+    width: 100%;
+  }
   .about-cards-container {
     flex-direction: column;
     align-items: center;

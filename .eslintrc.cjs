@@ -27,6 +27,7 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'react/jsx-props-no-spreading': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'linebreak-style': 'off',
     // Configure prettier

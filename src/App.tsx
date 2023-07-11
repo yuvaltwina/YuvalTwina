@@ -5,15 +5,19 @@ import Navbar from './components/navbar/Navbar';
 import About from './pages/about/About';
 // import Knowledge from './components/knowledge/Knowledge';
 import Projects from './pages/projects/Projects';
+import Footer from './pages/footer/Footer';
+import Contact from './pages/contact/Contact';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
       <Main />
-      <About />
       {/* <Knowledge /> */}
+      <About />
       <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

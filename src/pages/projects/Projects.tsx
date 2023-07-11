@@ -1,9 +1,8 @@
 import React from 'react';
 import '../../../dist/css/projects.css';
-import { GiQueenCrown } from 'react-icons/gi';
 
-const TITLE_TEXT = 'My Recent Work';
-const SUBTITLE_TEXT = "Here are a few past projects I've worked on";
+const TITLE_TEXT = 'Recent Work';
+const SUBTITLE_TEXT = 'Projects';
 const projectsInfo = [
   {
     title: 'Psychologist',
@@ -22,12 +21,8 @@ function Projects() {
     if (title === 'Pawtner') {
       isSpecialProject = true;
     }
-    const displayCrown = isSpecialProject && (
-      <GiQueenCrown className="project-crown" />
-    );
     return (
       <span key={title} className={`projects-card projects-${title}`}>
-        {displayCrown}
         <span className="projects-card-hover">
           <h1>{title}</h1>
           <p>website</p>

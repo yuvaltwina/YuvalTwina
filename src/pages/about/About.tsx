@@ -28,8 +28,10 @@ function About() {
   return (
     <div className="about">
       <section className="about-header">
-        <h1>{TITLE_TEXT}</h1>
-        <p>{SUBTITLE_TEXT}</p>
+        <div className="about-header-text">
+          <h1>{TITLE_TEXT}</h1>
+          <p>{SUBTITLE_TEXT}</p>
+        </div>
       </section>
       <section className="about-cards-container">{displayCards}</section>
     </div>
