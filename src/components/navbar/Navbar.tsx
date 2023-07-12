@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import '../../../dist/css/navbar.css';
 import Hamburger from '../hamburger/Hamburger';
+import { TrefList } from '../../utils/types';
 
-function Navbar() {
+type Tprops = {
+  refList: TrefList;
+};
+
+function Navbar({ refList }: Tprops) {
   const [navbarClass, setNavbarClass] = useState('');
-
   useEffect(() => {
     const handleScroll = () => {
       const firstSection = document.querySelector('.about');
@@ -23,14 +27,28 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [navbarClass]);
+
+  const scrollTo = (title: keyof TrefList) => {
+    const selectedRef = refList[title];
+    if (selectedRef) {
+      selectedRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const linksList = [
-    { text: 'Home', active: () => {} },
-    { text: 'Skills', active: () => {} },
-    { text: 'Projects', active: () => {} },
+    { text: 'Home', clickHandler: scrollTo },
+    { text: 'About', clickHandler: scrollTo },
+    { text: 'Projects', clickHandler: scrollTo },
   ];
-  const displayLinks = linksList.map(({ text, active }) => {
+
+  const displayLinks = linksList.map(({ text, clickHandler }) => {
     return (
-      <button type="button" key={text} className="navbar-link" onClick={active}>
+      <button
+        type="button"
+        key={text}
+        className="navbar-link"
+        onClick={() => clickHandler(text as keyof TrefList)}
+      >
         {text}
       </button>
     );
@@ -39,9 +57,20 @@ function Navbar() {
     <div className={`navbar slide-in-navbar ${navbarClass}`}>
       <section className="navbar-links-container">{displayLinks}</section>
       <span className="navbar-hamburger-container">
-        <Hamburger />
+        <Hamburger
+          linksList={[
+            ...linksList,
+            { text: 'Contact', clickHandler: scrollTo },
+          ]}
+        />
       </span>
-      <button type="button" className="navbar-contact">
+      <button
+        type="button"
+        className="navbar-contact"
+        onClick={() => {
+          scrollTo('Contact');
+        }}
+      >
         Contact Me
       </button>
     </div>
