@@ -6,7 +6,7 @@ const validationSchema = yup.object().shape({
     .required('Please enter your name.')
     .matches(/^[a-zA-Z\s]+$/, 'Name can only contain letters and spaces.')
     .min(2, 'Name should have at least 2 characters.')
-    .max(50, 'Name should not exceed 50 characters.'),
+    .max(30, 'Name should not exceed 30 characters.'),
   email: yup
     .string()
     .required('Please enter your email address.')

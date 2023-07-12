@@ -3,8 +3,16 @@ import '../../../dist/css/contact.css';
 import { useFormik } from 'formik';
 import { BiSolidError } from 'react-icons/bi';
 import { TextField, TextFieldProps, TextFieldVariants } from '@mui/material';
+import axios from 'axios';
+import { toast } from 'react-hot-toast';
 import validationSchema from '../../utils/formValidation';
 import { CapitilizeFirstChar } from '../../utils/functions';
+
+const EMAILJS_URL = `https://api.emailjs.com/api/v1.0/email/send`;
+const API_KEY_PUBLIC = import.meta.env.VITE_API_KEY_PUBLIC;
+const API_TAMPLATE_ID = import.meta.env.VITE_API_TAMPLATE_ID;
+const API_SERVICE_ID = import.meta.env.VITE_API_SERVICE_ID;
+const INPUTS_CATEGORIES = ['name', 'email', 'message'];
 
 interface IinitialValue {
   name: string;
@@ -17,15 +25,31 @@ const initialValues: IinitialValue = {
   email: '',
   message: '',
 };
-const INPUTS_CATEGORIES = ['name', 'email', 'message'];
 
 function Contact() {
   const formik = useFormik({
     initialValues,
     validationSchema,
-    onSubmit: (values, { resetForm }) => {
-      console.log(values);
-      resetForm();
+    onSubmit: async (values, { resetForm }) => {
+      if (formik.isValid && formik.dirty) {
+        const loadingToastId = toast.loading('Sending Email...');
+        try {
+          await axios.post(EMAILJS_URL, {
+            service_id: API_SERVICE_ID,
+            template_id: API_TAMPLATE_ID,
+            user_id: API_KEY_PUBLIC,
+            template_params: values,
+          });
+          toast.success('Email sent succsessfully!', {
+            id: loadingToastId,
+          });
+          resetForm();
+        } catch {
+          toast.error('Something went wrong please try again later', {
+            id: loadingToastId,
+          });
+        }
+      }
     },
   });
   const {
@@ -42,7 +66,6 @@ function Contact() {
     const labelText = CapitilizeFirstChar(inputType);
     return {
       id: inputType,
-      // label: labelText,
       placeholder: `Enter your ${labelText}`,
       variant: 'filled' as TextFieldVariants,
       onBlur: handleBlur,
@@ -59,6 +82,7 @@ function Contact() {
       },
     };
   };
+
   const displayInputError = (inputType: keyof IinitialValue) => {
     return touched[inputType] && errors[inputType] ? (
       <div className="contact-form-error">
@@ -70,30 +94,16 @@ function Contact() {
 
   const displayFormInputs = INPUTS_CATEGORIES.map((category: string) => {
     const inputTypeText = CapitilizeFirstChar(category);
-
     const displayInputField =
       category === 'message' ? (
         <TextField
           multiline
           rows={4}
-          sx={
-            {
-              // '& fieldset': { border: 'none' },
-            }
-          }
           {...inputProps(category as keyof IinitialValue)}
         />
       ) : (
-        <TextField
-          sx={
-            {
-              // '& fieldset': { border: 'none' },
-            }
-          }
-          {...inputProps(category as keyof IinitialValue)}
-        />
+        <TextField {...inputProps(category as keyof IinitialValue)} />
       );
-
     return (
       <span key={category} className="contact-form-input-container">
         <h1>{inputTypeText}</h1>

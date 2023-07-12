@@ -1,4 +1,5 @@
 import React from 'react';
+import { Toaster } from 'react-hot-toast';
 import '../dist/css/App.css';
 import Main from './pages/main/Main';
 import Navbar from './components/navbar/Navbar';
@@ -18,6 +19,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <Toaster />
     </div>
   );
 }

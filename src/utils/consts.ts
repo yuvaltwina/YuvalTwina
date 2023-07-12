@@ -40,4 +40,6 @@ export const CARDS_INFORMATION = [
     IconCompononet: LuBookOpenCheck,
   },
 ];
-export const AFASD = 'F';
+export const LINKEDIN_LINK =
+  'https://www.linkedin.com/in/yuval-twina-b94243264';
+export const GITHUB_LINK = 'https://github.com/yuvaltwina';
