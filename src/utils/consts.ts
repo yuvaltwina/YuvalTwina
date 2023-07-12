@@ -1,6 +1,7 @@
 import { GoCodescan } from 'react-icons/go';
 import { LuBookOpenCheck } from 'react-icons/lu';
 import { AiOutlineCloudServer } from 'react-icons/ai';
+import { TprojectsInformation } from './types';
 
 export const CARDS_INFORMATION = [
   {
@@ -43,3 +44,22 @@ export const CARDS_INFORMATION = [
 export const LINKEDIN_LINK =
   'https://www.linkedin.com/in/yuval-twina-b94243264';
 export const GITHUB_LINK = 'https://github.com/yuvaltwina';
+export const PROJECTS_INFORMATION: TprojectsInformation = {
+  Psychologist: {
+    about: 'this is a psychologist website so you can bla bla',
+    description: ['bla1', 'bla', 'bla', 'bla', 'bla'],
+    technologies: ['baaaala', 'aaaa', 'blaaaa', 'blaaa', 'blaaaa'],
+  },
+  Pawtner: {
+    about: 'this is a dog adopation website so you can bla bla',
+
+    description: ['bla2', 'bla', 'bla', 'bla', 'bla'],
+    technologies: ['baaaala', 'aaaa', 'blaaaa', 'blaaa', 'blaaaa'],
+  },
+  GlobalWeather: {
+    about: 'this is a global weather website so you can bla bla',
+    description: ['bla3', 'bla', 'bla', 'bla', 'bla'],
+    technologies: ['baaaala', 'aaaa', 'blaaaa', 'blaaa', 'blaaaa'],
+  },
+};
+export const PROJECTS_TITELS = [...Object.keys(PROJECTS_INFORMATION)];

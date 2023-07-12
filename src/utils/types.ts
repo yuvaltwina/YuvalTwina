@@ -9,3 +9,13 @@ export type TlinksList = {
   text: string;
   clickHandler: (title: keyof TrefList) => void;
 }[];
+type TprojectInfoSpecifics = {
+  about: string;
+  description: string[];
+  technologies: string[];
+};
+export type TprojectsInformation = {
+  Psychologist: TprojectInfoSpecifics;
+  Pawtner: TprojectInfoSpecifics;
+  GlobalWeather: TprojectInfoSpecifics;
+};
