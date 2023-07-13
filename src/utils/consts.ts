@@ -49,18 +49,37 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
     about:
       'A beautiful responsive website that I built and designed for my client, a clinic psychologist.',
     description: [
-      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
-      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
-      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
-      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
+      'Email Sending, Convenient email functionality for direct communication.',
+      'Contact Form, Integrated contact form for easy communication.',
+      'Attractive Design, Visually appealing and attractive website.',
+      'Easy Navigation, Intuitive interface for seamless browsing.',
     ],
     technologies: ['Typescript', 'Sass/Css', 'Material UI', 'EmailJS'],
+    websiteUrl: 'https://shaharbraverman.com/',
   },
   Pawtner: {
-    about: 'this is a dog adopation website so you can bla bla',
-
-    description: ['bla2', 'bla', 'bla', 'bla', 'bla'],
-    technologies: ['baaaala', 'aaaa', 'blaaaa', 'blaaa', 'blaaaa'],
+    about:
+      "A social network web app designed to simplify the process of dog adoption. Connect with passionate dog lovers and adoption centers, making it easier than ever to find the furry friend that's right for you.",
+    description: [
+      'Enable precise dog search using custom search parameters, enhancing the user experience.',
+      'Implement a secure login system that includes email verification.',
+      'Built Admin dashboard to monitor data.',
+      'bla',
+      'bla',
+    ],
+    technologies: [
+      'NodeJS',
+      'Express',
+      'MongoDB',
+      'Mongoose',
+      'Typescrpit',
+      'React',
+      'CSS',
+      'MatirialUI',
+      'SendGrid',
+      'Cloudinary',
+    ],
+    websiteUrl: 'https://pawtner-client.vercel.app/',
   },
   GlobalWeather: {
     about:
@@ -73,6 +92,7 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
       'Dark/Light Theme Mode Support',
     ],
     technologies: ['Javascript', 'React', 'CSS', 'Material UI'],
+    websiteUrl: 'https://global-weather-mu.vercel.app/',
   },
 };
 export const PROJECTS_TITELS = [...Object.keys(PROJECTS_INFORMATION)];

@@ -11,7 +11,7 @@ type Tprop = {
 };
 
 function ProjectModal({ modalTitle, setModalTitle }: Tprop) {
-  const { about, description, technologies } =
+  const { about, description, technologies, websiteUrl } =
     PROJECTS_INFORMATION[modalTitle as keyof TprojectsInformation];
   const displayDescription = description.map((text) => {
     return (
@@ -23,7 +23,6 @@ function ProjectModal({ modalTitle, setModalTitle }: Tprop) {
   const spartedTechnologies = technologies.join(' | ');
 
   const imageSource = `src\\utils\\images\\width${modalTitle}.png`;
-
   return (
     <Modal
       open={!!modalTitle}
@@ -48,7 +47,13 @@ function ProjectModal({ modalTitle, setModalTitle }: Tprop) {
           <h3>Technologies : </h3>
           <span className="modal-technologies">{spartedTechnologies}</span>
         </section>
-        <button type="button" className="modal-website-button">
+        <button
+          type="button"
+          className="modal-website-button"
+          onClick={() => {
+            window.open(websiteUrl, '_blank');
+          }}
+        >
           Take Me There
         </button>
       </div>

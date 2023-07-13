@@ -13,6 +13,7 @@ type TprojectInfoSpecifics = {
   about: string;
   description: string[];
   technologies: string[];
+  websiteUrl: string;
 };
 export type TprojectsInformation = {
   Psychologist: TprojectInfoSpecifics;
