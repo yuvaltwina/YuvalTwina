@@ -23,7 +23,6 @@
   flex-direction: column;
   gap: 1.5rem;
   width: clamp(17rem, 85%, 82rem);
-  // width: 85%;
   align-items: center;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
@@ -42,9 +41,7 @@
     display: block;
   }
 }
-.contact-form-input {
-  // background-color: #f6f6f6;
-}
+
 .contact-form-error {
   display: flex;
   color: rgba(255, 0, 0, 0.81);
@@ -54,24 +51,9 @@
   margin-top: 1rem;
 }
 .contact-form-submit {
-  position: relative;
-  color: $primary-color;
-  font-size: 1rem;
-  padding: 1.2rem 4.5rem;
-  color: white;
-  border: none;
-  background-color: $secondery-color;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  letter-spacing: 1px;
-  cursor: pointer;
+  @include classicButton;
   margin-top: 1rem;
   margin-left: auto;
-  font-weight: 700;
-  border-radius: 5px;
-  transition: all 0.4s;
-  &:hover {
-    transform: scale(1.05);
-  }
 }
 .css-10botns-MuiInputBase-input-MuiFilledInput-input {
   padding-top: 15px !important;

@@ -8,11 +8,66 @@
   max-height: 90vh;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #fff;
+  background-color: $third-color;
   width: clamp(300px, 90vw, 1100px);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 30px;
-  align-items: center;
   border-radius: 15px;
+  padding: 1.7rem 1.7rem;
+  color: $primary-color;
+}
+.modal-exit-icon {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  font-size: 2.1rem;
+  color: $secondery-color;
+  opacity: 1;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.modal-image {
+  width: 100%;
+  aspect-ratio: 9/4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.modal-information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  h1 {
+    font-size: 2rem;
+
+    color: $secondery-color;
+  }
+  h3 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: $secondery-color;
+  }
+  // text-align: center;
+}
+.modal-about {
+  font-size: 1.4rem;
+}
+.modal-description {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: $text-secondery;
+  padding-left: 1.5rem;
+  // margin: auto;
+}
+.modal-technologies {
+  font-size: 1.4rem;
+}
+.modal-website-button {
+  @include classicButton;
+  margin: auto;
 }

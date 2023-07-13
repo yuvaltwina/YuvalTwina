@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../../dist/css/projectModal.css';
 import { Modal } from '@mui/material';
+import { RiCloseFill } from 'react-icons/ri';
 import { PROJECTS_INFORMATION } from '../../utils/consts';
 import { TprojectsInformation } from '../../utils/types';
 
@@ -8,15 +9,21 @@ type Tprop = {
   modalTitle: string;
   setModalTitle: React.Dispatch<React.SetStateAction<string>>;
 };
+
 function ProjectModal({ modalTitle, setModalTitle }: Tprop) {
   const { about, description, technologies } =
     PROJECTS_INFORMATION[modalTitle as keyof TprojectsInformation];
   const displayDescription = description.map((text) => {
-    return <p key={text}>{text}</p>;
+    return (
+      <li key={text}>
+        <p>{text}</p>
+      </li>
+    );
   });
-  const displayTechnologies = technologies.map((technologie) => {
-    return <p key={technologie}>{technologie}</p>;
-  });
+  const spartedTechnologies = technologies.join(' | ');
+
+  const imageSource = `src\\utils\\images\\width${modalTitle}.png`;
+
   return (
     <Modal
       open={!!modalTitle}
@@ -26,15 +33,24 @@ function ProjectModal({ modalTitle, setModalTitle }: Tprop) {
       className="modal-container"
     >
       <div className="modal">
-        <span className="modal-image">image</span>
+        <img className="modal-image" src={imageSource} alt={modalTitle} />
+        <RiCloseFill
+          className="modal-exit-icon"
+          onClick={() => {
+            setModalTitle('');
+          }}
+        />
         <section className="modal-information">
           <h1>{modalTitle}</h1>
-          <p>{about}</p>
+          <p className="modal-about">{about}</p>
           <h3>Description : </h3>
-          <span>{displayDescription}</span>
+          <ul className="modal-description">{displayDescription}</ul>
           <h3>Technologies : </h3>
-          <span>{displayTechnologies}</span>
+          <span className="modal-technologies">{spartedTechnologies}</span>
         </section>
+        <button type="button" className="modal-website-button">
+          Take Me There
+        </button>
       </div>
     </Modal>
   );

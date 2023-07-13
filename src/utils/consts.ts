@@ -46,9 +46,15 @@ export const LINKEDIN_LINK =
 export const GITHUB_LINK = 'https://github.com/yuvaltwina';
 export const PROJECTS_INFORMATION: TprojectsInformation = {
   Psychologist: {
-    about: 'this is a psychologist website so you can bla bla',
-    description: ['bla1', 'bla', 'bla', 'bla', 'bla'],
-    technologies: ['baaaala', 'aaaa', 'blaaaa', 'blaaa', 'blaaaa'],
+    about:
+      'A beautiful responsive website that I built and designed for my client, a clinic psychologist.',
+    description: [
+      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
+      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
+      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
+      'bla1baaaalabaaaalabaaaalabaaaalabaaaalabaaaala',
+    ],
+    technologies: ['Typescript', 'Sass/Css', 'Material UI', 'EmailJS'],
   },
   Pawtner: {
     about: 'this is a dog adopation website so you can bla bla',
@@ -57,9 +63,16 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
     technologies: ['baaaala', 'aaaa', 'blaaaa', 'blaaa', 'blaaaa'],
   },
   GlobalWeather: {
-    about: 'this is a global weather website so you can bla bla',
-    description: ['bla3', 'bla', 'bla', 'bla', 'bla'],
-    technologies: ['baaaala', 'aaaa', 'blaaaa', 'blaaa', 'blaaaa'],
+    about:
+      'A simple, responsive web app built in React that displays the weather and time of a chosen city.',
+    description: [
+      'Dynamic icons for up-to-date weather information.',
+      'Interactive Clock with Moving Dials',
+      'City Time and Time Zone Display',
+      'Searchbar support Autocomplete',
+      'Dark/Light Theme Mode Support',
+    ],
+    technologies: ['Javascript', 'React', 'CSS', 'Material UI'],
   },
 };
 export const PROJECTS_TITELS = [...Object.keys(PROJECTS_INFORMATION)];

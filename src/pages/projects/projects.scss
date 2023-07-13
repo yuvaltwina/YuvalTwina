@@ -1,6 +1,6 @@
 @import '../../utils/variabels.scss';
 .projects {
-  margin-top: -0.1rem;
+  margin-top: -0rem;
   position: relative;
   z-index: 10;
   display: flex;
@@ -17,7 +17,6 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  // gap: 0.2rem;
   padding-inline: 0.45rem;
 
   h1 {
