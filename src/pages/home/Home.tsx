@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/css/main.css';
+import '../../../dist/css/home.css';
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import MotionImage from '../../components/motionImage/MotionImage';
 import { GITHUB_LINK, LINKEDIN_LINK } from '../../utils/consts';
@@ -9,7 +9,7 @@ const SUBTITLE_TEXT =
   'Fullstack developer with a flair for writing elegant solutions and thinking outside of the box';
 const CV_BUTTON_TEXT = 'Download CV';
 
-function Main() {
+function Home() {
   const headlineLetters = TITLE_TEXT.split('').map((letter, index) => {
     const animationDelay = index * 0.05;
     if (letter === '1') {
@@ -50,4 +50,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;

@@ -19,7 +19,7 @@ function About() {
           </span>
           <h1>{title}</h1>
           <p>{text}.</p>
-          <h3>Technologies :</h3>
+          <h3>Technologies</h3>
           <section className="about-card-tech">{displayTechnologies}</section>
         </div>
       );

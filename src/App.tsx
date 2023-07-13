@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Toaster } from 'react-hot-toast';
 import '../dist/css/App.css';
 import Navbar from './components/navbar/Navbar';
-import Main from './pages/main/Main';
+import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 import Footer from './pages/footer/Footer';
@@ -26,7 +26,7 @@ function App() {
     <div className="app">
       <Navbar refList={refList} />
       <div ref={homeRef} />
-      <Main />
+      <Home />
       <div ref={aboutRef} />
       <About />
       <div ref={projectsRef} />
