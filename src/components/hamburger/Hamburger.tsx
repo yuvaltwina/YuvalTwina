@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../../dist/css/hamburger.css';
+import '../../utils/css/hamburger.min.css';
 import SideDrawer from '../drawer/SideDrawer';
 import { TlinksList } from '../../utils/types';
 

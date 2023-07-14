@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/css/about.css';
+import '../../utils/css/about.min.css';
 import { CARDS_INFORMATION } from '../../utils/consts';
 
 const TITLE_TEXT = 'Hi, I’m Yuval. Nice to meet you.';

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/css/footer.css';
+import '../../utils/css/footer.min.css';
 import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import { GITHUB_LINK, LINKEDIN_LINK } from '../../utils/consts';
 

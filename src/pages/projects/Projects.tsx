@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../../dist/css/projects.css';
+import '../../utils/css/projects.min.css';
 import ProjectModal from '../../components/modal/ProjectModal';
 import { PROJECTS_TITELS } from '../../utils/consts';
 

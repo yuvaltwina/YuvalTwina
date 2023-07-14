@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/css/home.css';
+import '../../utils/css/home.min.css';
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import MotionImage from '../../components/motionImage/MotionImage';
 import { GITHUB_LINK, LINKEDIN_LINK } from '../../utils/consts';

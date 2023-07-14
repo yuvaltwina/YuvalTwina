@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/css/sideDrawer.css';
+import '../../utils/css/sideDrawer.min.css';
 import { Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { TlinksList, TrefList } from '../../utils/types';
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../../dist/css/navbar.css';
+import '../../utils/css/navbar.min.css';
 import Hamburger from '../hamburger/Hamburger';
 import { TrefList } from '../../utils/types';
 

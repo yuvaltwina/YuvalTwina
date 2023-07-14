@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/css/contact.css';
+import '../../utils/css/contact.min.css';
 import { useFormik } from 'formik';
 import { BiSolidError } from 'react-icons/bi';
 import { TextField, TextFieldProps, TextFieldVariants } from '@mui/material';

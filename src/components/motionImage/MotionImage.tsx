@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import futureGridImage from '../../utils/images/header.webp';
-import '../../../dist/css/motionImage.css';
+import '../../utils/css/motionImage.min.css';
 import {
   motion,
   useMotionTemplate,

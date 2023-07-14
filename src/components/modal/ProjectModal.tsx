@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../dist/css/projectModal.css';
+import '../../utils/css/projectModal.min.css';
 import { Modal } from '@mui/material';
 import { RiCloseFill } from 'react-icons/ri';
 import { PROJECTS_INFORMATION } from '../../utils/consts';

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Toaster } from 'react-hot-toast';
-import '../dist/css/App.css';
+import './utils/css/App.min.css';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
