@@ -9,10 +9,10 @@ const SUBTITLE_TEXT = 'Projects';
 function Projects() {
   const [modalTitle, setModalTitle] = useState('');
   const displayProjects = PROJECTS_TITELS.map((title: string) => {
-    let isSpecialProject = false;
-    if (title === 'Pawtner') {
-      isSpecialProject = true;
-    }
+    // let isSpecialProject = false;
+    // if (title === 'Pawtner') {
+    //   isSpecialProject = true;
+    // }
     return (
       <button
         type="button"
