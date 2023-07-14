@@ -54,7 +54,7 @@ function Navbar({ refList }: Tprops) {
     );
   });
   return (
-    <div className={`navbar slide-in-navbar ${navbarClass}`}>
+    <div className={`navbar ${navbarClass}`}>
       <section className="navbar-links-container">{displayLinks}</section>
       <span className="navbar-hamburger-container">
         <Hamburger
@@ -66,7 +66,7 @@ function Navbar({ refList }: Tprops) {
       </span>
       <button
         type="button"
-        className="navbar-contact"
+        className="btn41-43 btn-41"
         onClick={() => {
           scrollTo('Contact');
         }}

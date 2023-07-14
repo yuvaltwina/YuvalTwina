@@ -1,6 +1,6 @@
 @import '../../utils/variabels.scss';
 .hamburger {
-  padding: 10px 10px;
+  padding: 5px 5px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -28,8 +28,8 @@
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 30px;
+  height: 10px;
   display: inline-block;
   position: relative;
 }

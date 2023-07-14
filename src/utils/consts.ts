@@ -7,7 +7,7 @@ export const CARDS_INFORMATION = [
   {
     title: 'Backend developer',
     text: 'Talent for resolving bugs, developing new features, refactoring existing programs, as well as implementing clean quality code',
-    technologies: ['NodeJs', 'Express', 'Mongoose', 'MongoDB'],
+    technologies: ['Mongoose', 'MongoDB', 'Express', 'NodeJs'],
     IconCompononet: AiOutlineCloudServer,
   },
   {
@@ -30,13 +30,13 @@ export const CARDS_INFORMATION = [
     title: 'General',
     text: 'Passionate about coding projects from scratch and enjoy bringing ideas to life. keep on learning and improving on a daily basis',
     technologies: [
-      'GIT',
-      'Github',
-      'Figma',
-      'Vercel',
-      'Render',
-      'SendGrid',
       'Cloudinary',
+      'SendGrid',
+      'Render',
+      'Vercel',
+      'Figma',
+      'Github',
+      'GIT',
     ],
     IconCompononet: LuBookOpenCheck,
   },
@@ -65,7 +65,6 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
       ' Provide detailed profiles for each breed, including photos, descriptions, and key information.',
       'Implement a secure login system that includes email verification.',
       'Built Admin dashboard to monitor data.',
-      'bla',
     ],
     technologies: [
       'NodeJS',
