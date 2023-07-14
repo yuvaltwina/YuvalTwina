@@ -4,7 +4,15 @@ import { Modal } from '@mui/material';
 import { RiCloseFill } from 'react-icons/ri';
 import { PROJECTS_INFORMATION } from '../../utils/consts';
 import { TprojectsInformation } from '../../utils/types';
+import PsychologistImage from '../../utils/images/widthPsychologist.png';
+import PawtnerImage from '../../utils/images/widthPawtner.png';
+import GlobalWeatherImage from '../../utils/images/widthGlobalWeather.png';
 
+const widthImages: any = {
+  Psychologist: PsychologistImage,
+  Pawtner: PawtnerImage,
+  GlobalWeather: GlobalWeatherImage,
+};
 type Tprop = {
   modalTitle: string;
   setModalTitle: React.Dispatch<React.SetStateAction<string>>;
@@ -22,7 +30,7 @@ function ProjectModal({ modalTitle, setModalTitle }: Tprop) {
   });
   const spartedTechnologies = technologies.join(' | ');
 
-  const imageSource = `src\\utils\\images\\width${modalTitle}.png`;
+  const imageSource = widthImages[modalTitle];
   return (
     <Modal
       open={!!modalTitle}
