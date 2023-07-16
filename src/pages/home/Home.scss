@@ -18,16 +18,16 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-inline: 1rem;
+  padding-inline: 2.9rem;
   gap: 2rem;
   width: clamp(18.8rem, 100%, 44rem);
 }
 .header-title {
-  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-size: clamp(2.2rem, 8vw, 3.5rem);
   color: $third-color;
 }
 .header-subtitle {
-  font-size: clamp(1.1rem, 4vw, 1.8rem);
+  font-size: clamp(1.15rem, 4vw, 1.8rem);
   color: $text-secondery;
 }
 
