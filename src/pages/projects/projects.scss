@@ -1,6 +1,5 @@
 @import '../../utils/variabels.scss';
 .projects {
-  margin-top: -0rem;
   position: relative;
   z-index: 10;
   display: flex;
@@ -21,12 +20,12 @@
 
   h1 {
     font-weight: 500;
-    font-size: clamp(4.5rem, 5vw, 5rem);
+    font-size: clamp(2.8rem, 10vw, 5rem);
     color: $primary-color;
   }
   p {
     font-weight: 500;
-    font-size: clamp(4.5rem, 5vw, 5rem);
+    font-size: clamp(2.8rem, 10vw, 5rem);
     color: $secondery-color;
   }
 }

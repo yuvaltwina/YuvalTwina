@@ -12,12 +12,12 @@
   padding: 1.8rem;
   color: $primary-color;
   h1 {
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 5vw, 1.6rem);
     font-weight: 549;
   }
   p {
     font-weight: 549;
-    font-size: 1.45rem;
+    font-size: clamp(1.4rem, 5vw, 1.45rem);
   }
 }
 .footer-icons-container {
