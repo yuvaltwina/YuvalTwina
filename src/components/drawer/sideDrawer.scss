@@ -24,3 +24,11 @@
   line-height: 1.5 !important;
   width: 250px !important;
 }
+.css-qs2q9j {
+  padding: 1.5rem !important;
+  &:hover {
+    .css-10hburv-MuiTypography-root {
+      color: $secondery-color;
+    }
+  }
+}
