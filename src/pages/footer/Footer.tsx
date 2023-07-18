@@ -3,7 +3,7 @@ import '../../utils/css/footer.min.css';
 import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import { GITHUB_LINK, LINKEDIN_LINK } from '../../utils/consts';
 
-const MY_EMAIL = 'YuvalTwina2@gmail.com';
+const MY_EMAIL = 'yuvaltwina239@gmail.com';
 const MY_NUMBER = '058-523-5455';
 
 function Footer() {
