@@ -34,9 +34,13 @@ function Home() {
       <div className="header-content-container">
         <h1 className="header-title">{headlineLetters}</h1>
         <p className="header-subtitle fade-in-subtitle">{SUBTITLE_TEXT}</p>
-        <button type="button" className="header-button slide-in-button">
-          <p className="header-button-text">{CV_BUTTON_TEXT}</p>
-        </button>
+        <a
+          href="/resume.pdf"
+          download="Yuval Twina Resume"
+          className="header-resume-link slide-in-button"
+        >
+          {CV_BUTTON_TEXT}
+        </a>
         <section className="header-icons-container fade-in-subtitle">
           <a href={GITHUB_LINK} target="_blank" rel="noopener noreferrer">
             <AiOutlineGithub className="header-icon" />

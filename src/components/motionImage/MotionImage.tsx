@@ -16,9 +16,7 @@ const springConfig = {
   mass: 0.5,
   stiffness: 150,
 };
-//האם לשנות את האיבנט ליסנר
-//להבין את הקוד טוב יותר
-//האם לשנות עם USE REF
+
 function GridBackground() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);

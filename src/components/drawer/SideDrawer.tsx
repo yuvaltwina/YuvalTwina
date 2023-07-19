@@ -8,7 +8,6 @@ type Tprops = {
   isOpenDrawer: boolean;
   setIsOpenDrawer: React.Dispatch<React.SetStateAction<boolean>>;
 };
-// key can be string and key of trefList?
 
 function SideDrawer({ linksList, isOpenDrawer, setIsOpenDrawer }: Tprops) {
   const closeDrawer = () => {
