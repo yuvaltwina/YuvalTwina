@@ -78,7 +78,7 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
       'SendGrid',
       'Cloudinary',
     ],
-    websiteUrl: 'https://pawtner-client.vercel.app/',
+    websiteUrl: 'https://pawtner.vercel.app/',
   },
   GlobalWeather: {
     about:
