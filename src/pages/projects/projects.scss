@@ -6,10 +6,10 @@
   flex-direction: column;
   align-items: center;
   background-color: $third-color;
-  padding-bottom: 12rem;
   width: 100%;
   gap: 5rem;
   padding-top: 10rem;
+  padding-bottom: 4.5rem;
 }
 .projects-header {
   display: flex;
@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 8rem;
   background-color: $secondery-color;
   padding: 1rem;
   padding-top: 1.5rem;
@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
   h1 {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   }
   p {
     font-size: 1.3rem;
@@ -74,7 +74,7 @@
 }
 .projects-card {
   position: relative;
-  width: clamp(16.5rem, 29%, 30rem);
+  width: clamp(16.5rem, 29%, 25rem);
   aspect-ratio: 2/3;
   border-radius: 10px;
   background-color: $secondery-color;
@@ -99,4 +99,9 @@
 .projects-GlobalWeather {
   background-image: url('/src/utils/images/GlobalWeather.png');
   background-position: 50% 87%;
+}
+@media screen and (max-width: 750px) {
+  .projects-cards-container {
+    gap: 4rem;
+  }
 }
