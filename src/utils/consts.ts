@@ -20,6 +20,7 @@ export const CARDS_INFORMATION = [
       'Typescript',
       'JavaScript',
       'React.js',
+      'Redux',
       'Html',
       'Sass',
       'Css',
