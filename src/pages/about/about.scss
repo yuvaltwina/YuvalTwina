@@ -53,16 +53,16 @@
   gap: 1.5rem;
   padding: 3rem 1rem 5rem 1rem;
   h1 {
-    font-size: 1.9rem;
+    font-size: clamp(1.7rem, 4vw, 1.9rem);
     font-weight: 700;
   }
   h3 {
-    font-size: 1.6rem;
+    font-size: clamp(1.5rem, 4vw, 1.6rem);
     font-weight: 700;
     color: $secondery-color;
   }
   p {
-    font-size: 1.3rem;
+    font-size: clamp(1.2rem, 4vw, 1.3rem);
     line-height: 1.5;
     font-weight: 400;
   }
