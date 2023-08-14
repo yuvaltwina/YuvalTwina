@@ -8,7 +8,7 @@ import { toast } from 'react-hot-toast';
 import validationSchema from '../../utils/formValidation';
 import { CapitilizeFirstChar } from '../../utils/functions';
 
-const EMAILJS_URL = `https://api.emailjs.com/api/v1.0/email/send`;
+const EMAILJS_URL = 'https://api.emailjs.com/api/v1.0/email/send';
 const API_KEY_PUBLIC = import.meta.env.VITE_API_KEY_PUBLIC;
 const API_TAMPLATE_ID = import.meta.env.VITE_API_TAMPLATE_ID;
 const API_SERVICE_ID = import.meta.env.VITE_API_SERVICE_ID;
