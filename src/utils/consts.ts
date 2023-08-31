@@ -7,7 +7,7 @@ export const CARDS_INFORMATION = [
   {
     title: 'Backend developer',
     text: 'Talent for resolving bugs, developing new features, refactoring existing programs, as well as implementing clean quality code',
-    technologies: ['Mongoose', 'MongoDB', 'Express', 'NodeJs'],
+    technologies: ['Mongoose', 'MongoDB', 'Express', 'NodeJs', 'MySQL'],
     IconCompononet: AiOutlineCloudServer,
   },
   {
