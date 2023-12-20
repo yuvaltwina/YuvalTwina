@@ -14,9 +14,11 @@ type TprojectInfoSpecifics = {
   description: string[];
   technologies: string[];
   websiteUrl: string;
+  subTitle?: string;
 };
 export type TprojectsInformation = {
   Psychologist: TprojectInfoSpecifics;
   Pawtner: TprojectInfoSpecifics;
   GlobalWeather: TprojectInfoSpecifics;
+  Tictactoe: TprojectInfoSpecifics;
 };

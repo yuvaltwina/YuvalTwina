@@ -7,11 +7,13 @@ import { TprojectsInformation } from '../../utils/types';
 import PsychologistImage from '../../utils/images/widthPsychologist.png';
 import PawtnerImage from '../../utils/images/widthPawtner.png';
 import GlobalWeatherImage from '../../utils/images/widthGlobalWeather.png';
+import TictactoeImage from '../../utils/images/widthTictactoe.png';
 
 const widthImages: any = {
   Psychologist: PsychologistImage,
   Pawtner: PawtnerImage,
   GlobalWeather: GlobalWeatherImage,
+  Tictactoe: TictactoeImage,
 };
 type Tprop = {
   modalTitle: string;

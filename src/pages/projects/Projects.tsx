@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../../utils/css/projects.min.css';
 import ProjectModal from '../../components/modal/ProjectModal';
-import { PROJECTS_TITELS } from '../../utils/consts';
+import { PROJECTS_INFORMATION, PROJECTS_TITELS } from '../../utils/consts';
+import { TprojectsInformation } from '../../utils/types';
 
 const TITLE_TEXT = 'Recent Work';
 const SUBTITLE_TEXT = 'Projects';
@@ -20,7 +21,9 @@ function Projects() {
       >
         <span className="projects-card-hover">
           <h1>{title}</h1>
-          <p>website</p>
+          <p>
+            {PROJECTS_INFORMATION[title as keyof TprojectsInformation].subTitle}
+          </p>
         </span>
       </button>
     );

@@ -100,6 +100,10 @@
   background-image: url('/src/utils/images/GlobalWeather.png');
   background-position: 50% 87%;
 }
+.projects-Tictactoe {
+  background-image: url('/src/utils/images/Tictactoe.png');
+  background-position: 20% 50%;
+}
 @media screen and (max-width: 750px) {
   .projects-cards-container {
     gap: 4rem;

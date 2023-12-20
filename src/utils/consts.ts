@@ -57,6 +57,32 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
     ],
     technologies: ['Typescript', 'Sass/Css', 'Material UI', 'EmailJS'],
     websiteUrl: 'https://shaharbraverman.com/',
+    subTitle: 'Landing Page',
+  },
+  Tictactoe: {
+    about:
+      'Introducing Tic-Tac-Toe, an engaging web app designed to bring the classic game of tic-tac-toe to the online world, we got an online chat and you can even play against our bot.',
+    description: [
+      'Online chat, Communicate with opponents in real-time, adding a social dimension to your games. ',
+      'Match history, Access a detailed record of past games, including opponents, outcomes, and scores',
+      'Online Games, Explore diverse games, solo or with global players.',
+      'Score board, Compete for the top spot, earn points for victories, and track your ranking against other players.',
+    ],
+    technologies: [
+      'NodeJS',
+      'Express',
+      'MySql',
+      'Typescrpit',
+      'React',
+      'SASS',
+      'MatirialUI',
+      'Socket.io',
+      'Redux',
+      'formik',
+      'React-Query',
+    ],
+    websiteUrl: 'https://tic-tac-toe-online-game.vercel.app/',
+    subTitle: 'Online Game',
   },
   Pawtner: {
     about:
@@ -80,6 +106,7 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
       'Cloudinary',
     ],
     websiteUrl: 'https://pawtner.vercel.app/',
+    subTitle: 'Dog Adoption',
   },
   GlobalWeather: {
     about:
@@ -93,6 +120,7 @@ export const PROJECTS_INFORMATION: TprojectsInformation = {
     ],
     technologies: ['Javascript', 'React', 'CSS', 'Material UI'],
     websiteUrl: 'https://global-weather-mu.vercel.app/',
+    subTitle: 'Forecast',
   },
 };
 export const PROJECTS_TITELS = [...Object.keys(PROJECTS_INFORMATION)];
